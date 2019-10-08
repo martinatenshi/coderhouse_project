@@ -1,0 +1,374 @@
+$color_1: $color_1;
+$color_2: $color_3;
+$color_3: $color_4;
+$color_4: $color_5;
+$font_family_1: $font_family_1;
+$font_family_2: $font_family_2;
+$font_family_3: $font_family_3;
+$font_family_4: $font_family_4;
+$background_color_1: $background_color_1;
+$background_color_2: $background_color_2;
+
+
+$color_1 {
+	&: {
+		black; {
+			$color_2 {
+				&: {
+					#000; {
+						$color_3 {
+							&: {
+								#fff; {
+									$color_4 {
+										&: {
+											white; {
+												$color_5 {
+													&: {
+														#ffffff; {
+															$font_family_1 {
+																&: {
+																	'Oswald' {
+																		box-sizing: border-box;
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+sans-serif; {
+	$font_family_2 {
+		&: {
+			'Ubuntu' {
+				box-sizing: border-box;
+			}
+		}
+	}
+	$font_family_3 {
+		&: {
+			'Work Sans' {
+				box-sizing: border-box;
+			}
+		}
+	}
+	$font_family_4 {
+		&: {
+			'Ubuntu' {
+				box-sizing: border-box;
+			}
+		}
+	}
+}
+sans {
+	serif; {
+		$background_color_1 {
+			&: {
+				#9b122c; {
+					$background_color_2 {
+						&: {
+							transparent; {
+								* {
+									box-sizing: border-box;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1;
+}
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1 {
+	font-family: $font_family_1;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 80px;
+	letter-spacing: 1px;
+	color: $color_1;
+}
+h2 {
+	font-family: $font_family_1;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 80px;
+	letter-spacing: 1px;
+	color: $color_1;
+	display: block;
+	margin-block-start: 0.40em;
+	margin-block-end: 0.20em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+h3 {
+	font-family: $font_family_2;
+	text-align: center;
+	font-size: 30px;
+	color: $color_1;
+}
+h4 {
+	font-family: $font_family_2;
+	text-align: center;
+	font-size: 14px;
+	color: $color_1;
+	font-weight: 600;
+}
+h5 {
+	font-family: $font_family_2;
+	text-align: center;
+	font-size: 14px;
+	color: $color_1;
+	font-weight: 300;
+}
+.nav-item {
+	float: right;
+	font-size: 16px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: $font_family_1;
+	text-transform: uppercase;
+	float: right;
+	overflow: hidden;
+}
+.navbar-light {
+	.navbar-nav { .nav-link { color: $color_2;
+}
+} {
+	} {
+		#logo {
+			position: absolute;
+			padding-bottom: 48px;
+			margin-top: 15px;
+		}
+	}
+	.release {
+		margin: 5px;
+	}
+	#paragraph-disco {
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 7px;
+		justify-content: center;
+	}
+}
+.container2 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.text-inside {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-family: $font_family_1;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 70px;
+	letter-spacing: 1px;
+	color: $color_2;
+}
+.text-block {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	font-family: $font_family_1;
+	width: 100%;
+	position: relative;
+	color: $color_2;
+	height: 25px;
+	padding-top: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.container_releases {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 7px;
+	justify-content: center;
+}
+.subcontainer_release {
+	border: none;
+	color: $color_3;
+	opacity: 1;
+	transition: 0.3s;
+	&: hover { opacity: 0.8;
+}
+.button-music {
+	font-family: $font_family_3;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	color: $color_4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: $background_color_1;
+	justify-content: center;
+}
+p {
+	font-family: $font_family_2;
+	font-size: 16px;
+	word-spacing: 1px;
+	letter-spacing: 0,5px;
+	color: $color_1;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1220px;
+}
+#paragraph-bio {
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 7px;
+	justify-content: center;
+}
+.izquierda {
+	float: left;
+	padding: 10px;
+	width: 550px;
+	margin: 40px;
+	float: left;
+	padding: 10px;
+	width: 550px;
+	margin: 40px;
+}
+.derecha {
+	float: left;
+	padding: 10px;
+	width: 550px;
+	margin: 40px;
+	padding: 10px;
+	width: 550px;
+	margin: 40px;
+}
+ul {
+	li { font-family: $font_family_2;
+	color: $color_1;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1220px;
+	list-style: none;
+}
+.releases-li {
+	float: left;
+	padding: 10px;
+	width: 600px;
+	margin: 40px;
+}
+.remix-li {
+	float: left;
+	padding: 10px;
+	width: 600px;
+	margin: 40px;
+}
+.dates {
+	font-family: $font_family_2;
+	color: $color_1;
+}
+.container_dates {
+	display: flex;
+	flex-flow: row-nowrap;
+	padding: 10px;
+	flex-wrap: wrap;
+	padding: 7px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.hijo {
+	width: 50px;
+	height: 50px;
+	background-color: $background_color_1;
+	border: none;
+	padding: 5px;
+	margin: 5px;
+	font-family: $font_family_4;
+	font-size: 36px;
+	color: $color_3;
+}
+.hijo2 {
+	width: 300px;
+	height: 50px;
+	background-color: $background_color_2;
+	color: $color_1;
+	border: none;
+	padding: 5px;
+	margin: 5px;
+	font-family: $font_family_4;
+	font-size: 16px;
+	color: $color_3;
+}
+.form {
+	display: block;
+	text-align: center;
+}
+form {
+	font-family: $font_family_2;
+	color: $color_1;
+	display: inline-block;
+	text-align: center;
+}
+fieldset {
+	border-width: 0px;
+}
+label {
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+}

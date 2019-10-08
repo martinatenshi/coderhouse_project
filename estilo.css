@@ -18,23 +18,24 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	text-align: center; 
-    font-size: 80px;
+  font-size: 80px;
 	letter-spacing: 1px;
-    color: black;
+  color: black;
 }
+
 h2 {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	text-align: center; 
-    font-size: 80px;
+  font-size: 80px;
 	letter-spacing: 1px;
-    color: black;
+  color: black;
 }
 h3 {
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center; 
-    font-size: 30px;
-    color: black;
+  font-size: 30px;
+  color: black;
 }
 
 h4{
@@ -57,48 +58,23 @@ h5{
 ====================================
 */
 
-.navbar {
-    overflow: hidden;
-    background-color: #fff;
-}
-.navbar a {
+.nav-item {
     float: right;
     font-size: 16px;
-    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
-.navbar {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
 }
 
-.subnav {
+.nav-item {
     float: right;
     overflow: hidden;
-}
-.subnav .subnavbtn {
-    font-size: 16px;
-    border: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: Oswald, sans serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-}
-.navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: gray;
-}
-
-.subnav:hover {
-    display: block;
-    background-color: #fff;
-    color: gray;
 }
 
 #logo{
@@ -130,7 +106,8 @@ h5{
     left: 50%;
     font-family: 'Oswald', sans-serif;
     transform: translate(-50%, -50%);
-    font-size: 80px;
+    text-align: center;
+    font-size: 70px;
     letter-spacing: 1px;
     color: #fff;
 }
@@ -344,6 +321,7 @@ ul li {
 /* Booking
 ====================================
 */
+
 
 .form {
   display: block;
