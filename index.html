@@ -1,127 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Yotto Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-  <link rel= 'stylesheet' type='text/css' href='estilo.css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
+<html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+   <link rel= 'stylesheet' type='text/css'
+    href='estilo.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 
-<body style="height:1500px">
+  <title>Yotto's Website</title>
 
-<nav class="navbar navbar-expand-sm bg-white navbar-light sticky-top">
-  <div class= 'container'>
-      <img src= 'logo.png' alt='logo' id='logo'> 
-  </div>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#Home">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#LastReleases">LastReleases</a>
-    </li>
-     <li class="nav-item">
-      <a class="nav-link" href="#Biography">Biography</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Discography">Discography</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Dates">Dates</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Booking">Booking</a>
-    </li>
-  </ul>
-</nav>
+  </head>
 
-    <br>
+  <body>
 
-		<div class='container2'> 
-      <img src=yotto2.jpg alt='Yotto' class="center">
-      <div class='text-inside'> ODD ONE OUT TOUR.19 </div>
-    </div> 
-
-
-    <div class='text-block' style= 'width: 100%; display: inline-block; background-color: #1c1c1c;'>
-      <span> LISTEN NEW EP ‘’THE ONE THATS LEFT BEHIND’’ OUT NOW!</span>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img src= 'logo.png' alt='logo' id='logo'>
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#latestreleases">Last Releases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#biography">Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#discography">Discography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dates">Dates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking">Booking</a>
+          </li>                
+        </ul>
+      </div>
     </div>
+    </nav>
 
-    <br>
-    <br>
+  <!-- HOME -->
+  <img class= 'd-block w-100' src= 'yotto.jpg' alt='main' >
+	  <div class="hero-text">
+	      <h1>'ODD ONE OUT' TOUR 2019</h1>
+	      <a class="btn btn-large btn-primary btn-danger" href="#">Get tickets</a>
+	      <a class="btn btn-large btn-secondary btn-dark" href="#">Next dates</a>
+	  </div>
+	</div>
 
-    <a name='latestrelases'> <h2>Latest Releases</h2> </a>
-    <h5> Here's an overview of the tracks, remixes, and other releases of Yotto </h5>
+
+  <a class='text-block' style= 'width: 100%; display: inline-block; background-color: #1c1c1c; text-decoration: none;' href='http://yotto.com'>
+    <span> LISTEN NEW EP ‘’THE ONE THATS LEFT BEHIND’’ OUT NOW!</span>
+  </a>
+
+  <br>
+  <br>
+  <br>
+  <br> 
+
+  <!-- LATEST RELEASES -->
+
+  <a name='latestrelases' href="#" style='text-decoration: none; '> <h2>Latest Releases</h2> </a>
+    <h4> Here's an overview of the tracks, remixes, and other releases of Yotto </h4>
+
+  <br>
 
     <div class='container_releases'>
 
       <div class='subcontainer_release'>
         <p class='release'> 
-          <img src=release4.jpg alt='release1'> 
+          <img src=release4.jpg alt='release1' href="https://soundcloud.com/lane8music/lane-8-yotto-iy"> 
         </p>
-        <h4 class='subcontainer_heading'>
+        <h5 class='subcontainer_heading'>
           I/Y - Yotto & Lane8
-        </h4>
+        </h5>
       </div>
        
       <div class='subcontainer_release'>
         <p class='release'> 
-          <img src=release2.jpg alt='release2'> 
+          <img src=release2.jpg alt='release2' href="https://soundcloud.com/anjunadeep/yotto-turn-it-around-extended-mix"> 
         </p>
-        <h4 class='subcontainer_heading'>
+        <h5 class='subcontainer_heading'>
           Turn it around - Yotto
-        </h4>
+        </h5>
       </div>
 
       <div class='subcontainer_release'>
         <p class='release'> 
-          <img src=release3.jpg alt='release3'> 
+          <img src=release3.jpg alt='release3' href='https://soundcloud.com/joris-voorn/yotto-walls-joris-voorn-remix'> 
         </p>
-        <h4 class='subcontainer_heading'>
-          Walls - Yotto (Joris Voorn Remix)
-        </h4>
+        <h5 class='subcontainer_heading'>
+          Walls - Yotto
+        </h5>
       </div>
 
       <div class='subcontainer_release'>
         <p class='release'> 
-          <img src=release4.jpg alt='release4'> 
+          <img src=release4.jpg alt='release4' href='https://soundcloud.com/yotto/the-one-you-left-behind-feat-vok'> 
         </p>
-        <h4 class='subcontainer_heading'>
+        <h5 class='subcontainer_heading'>
           The one you left behind - Yotto
-        </h4>
+        </h5>
       </div>
     </div>
 
-    <br>
-    <br>
-    
-    <a class="button-music" href="https://play.spotify.com/"> Listen more </a>
+  <br>
+  <br>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  
+  <div class="text-center">
+    <button type="button" class="btn btn-danger btn-lg" href="https://soundcloud.com/yotto">Listen More</button>
+  </div>
 
-    <div class='container2'> 
-   <img src=yotto3.png alt='bio' class="center">
-      <div class='text-inside'> BIOGRAPHY </div>
-    </div> 
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- BIOGRAPHY -->
+
+  <img class= 'd-block w-100' src= 'yotto3.png' alt='bio'> 
+  </div> 
 
   <div id= 'paragraph-bio'> 
 
     <div class='izquierda'> 
-      <p> Otto Yliperttula (born October 8, 1986), known professionally by his stage name, Yotto, is a Finnish DJ, songwriter, and record producer. Currently residing in Helsinki, Finland, the 30-year-old is signed to English deep house label, Anjunadeep. Yotto came to fruition with a string of remixes and originals that caught the ear of Anjunadeep label boss, James Grant. Deemed “a man of many sounds” by Billboard and “an experimental house talent” by Dancing Astronaut, he produces a number of styles within the house music genre and sometimes other forms of electronic music. As well as his own solo releases, Yliperttula has worked alongside other DJs & producers such as Coldplay, Rüfüs, Above & Beyond, Lane 8, and Super8 & Tab. A five track EP titled 'Stars' was released in 2013 on The Shapeshifters Nocturnal Groove imprint by Otto and Karolus Viitala under the moniker Something Good. He has also collaborated with his younger brother who performed vocals on tracks under the alias CAPS for both Something Good and Yotto. </p>
+      <p> Otto Yliperttula (born October 8, 1986), known professionally by his stage name, Yotto, is a Finnish DJ, songwriter, and record producer. Currently residing in Helsinki, Finland, the 30-year-old is signed to English deep house label, Anjunadeep. Yotto came to fruition with a string of remixes and originals that caught the ear of Anjunadeep label boss, James Grant. Deemed “a man of many sounds” by Billboard and “an experimental house talent” by Dancing Astronaut, he produces a number of styles within the house music genre and sometimes other forms of electronic music. As well as his own solo releases, Yliperttula has worked alongside other DJs & producers such as Coldplay, Rüfüs, Above & Beyond, Lane 8, and Super8 & Tab. </p>
     </div> <!--izquierda-->
 
     <div class='derecha'> 
@@ -130,16 +147,21 @@
     </div> <!--derecha-->
    
   </div>
-   
+
   <br>
   <br>
 
+ <!-- DISCOGRAPHY -->
 
-  <a name="discography"> <h2>Discography</h2> </a>
+ <a name="discography"> <h2>Discography</h2> </a>
+ <h4> Here's an overview of the tracks, remixes, and other releases of Yotto </h4>
   <div id= 'paragraph-disco'>
 
     <div class='releases-li'> 
       <h3> Releases </h3>
+
+      <br>
+ 
       <ul> 
         <li> Yotto - <b> "Fire Walk"</b> (Anjunadeep / November 11, 2016) </li>
         <br>
@@ -165,6 +187,9 @@
 
     <div class='remix-li'> 
       <h3> Remixes </h3>
+	
+	<br>
+
       <ul>	
         <li>Coldplay - "Adventure Of A Lifetime" (Yotto Remix)</li>
         <br>
@@ -190,135 +215,127 @@
   </div>
 
   <br>
+
+ <!-- DATES -->
+
+  <div class='image'>
+
   <br>
   <br>
   <br>
-
-  <div class= 'container_dates'> 
-    <img src=dates.jpg alt='dates' class="center">
-  </div>
-
-  <a name="Dates"></a>
-  <div class='dates'> <h2>Dates</h2>
-    <h5> These are the dates of the month, click 'See more' to see becoming gigs </h5>
-  </div>
-
-  <div class= 'container_dates'> 
-   <div class= 'dates-izq'>
-     <div class='hijo'> 15 </div>
-     <div class='hijo'> 20 </div>
-     <div class='hijo'> 21 </div>
-     <div class='hijo'> 27 </div>
-     <div class='hijo'> 28 </div>
-     <div class='hijo'> 25 </div>
-    </div><!--izquierda-->
-
-   <div class= 'dates-der'>
-
-    <div class='hijo2'> 
-      <p>SUNDAY, SEP. ODD ONE OUT TOUR. Fortitude Valley, Australia.</p> 
-    </div>
-
-    <div class='hijo2'>
-      <p>FRIDAY, SEP. ODD ONE OUT TOUR. San Diego, California </p> 
-    </div>
-
-    <div class='hijo2'> 
-      <p>SATURDAY, SEP. ANJUNADEEP OPEN AIR AUSTIN. Austin, Texas </p> 
-    </div>
-
-     <div class='hijo2'>
-       <p>FRIDAY, SEP. ODD ONE OUT TOUR. Vancouver, Canada </p>
-     </div>
-
-      <div class='hijo2'> 
-        <p>FRIDAY, SEP. ODD ONE OUT TOUR. Chicaco, IL </p> 
-      </div>
-
-      <div class='hijo2'> 
-        <p>FRIDAY, SEP. ODD ONE OUT TOUR. Boston, MA </p> 
-      </div>
-    </div><!--derecha-->
-  </div>
+  <br>
+  <br>
 
 
-    <a class="button-music" href="www.yotto.com"> See more </a>
+	 <a name="Dates"> <h2 style= 'color: #fff!important;'> Dates</h2> </a>
+	 <h5 style= 'color: #fff!important;'> These are the dates of the month, click 'See more' to see becoming gigs </h5>
 
-    <br>
-    <br>
-    <br>
-    <br>
+	 <br>
+	 <br>
+	 
 
-    <a name='booking'> <h2>  Booking  </h2> 
-    <h5> Press, Promotion, Remix Requests & Licenses please contact to info@anjunamusic.com </h5>
-   
-   <div class="booking1">
-     
-   </div>
+		<div class= 'container_dates'> 
+
+		   <div class= 'dates-izq'>
+		     <div class='hijo'> 15 </div>
+		     <br>
+		     <div class='hijo'> 20 </div>
+		     <br>
+		     <div class='hijo'> 21 </div>
+		     <br>
+		     <div class='hijo'> 27 </div>
+		     <br>
+		     <div class='hijo'> 28 </div>
+		     <br>
+		     <div class='hijo'> 25 </div>
+		   </div><!--izquierda-->
+
+		   <div class= 'dates-der'>
+
+			    <div class='hijo2'> 
+			      <p style= 'color: #fff!important;'>SUNDAY, SEP. ODD ONE OUT TOUR. Fortitude Valley, Australia. 
+			      <a class="btn btn-sm btn-primary btn-danger" href="#">SOLD OUT</a></p> 
+			    </div>
+			    <br>
+			    <div class='hijo2'>
+			      <p style= 'color: #fff!important;'>FRIDAY, SEP. ODD ONE OUT TOUR. San Diego, California. 
+			      <a class="btn btn-sm btn-primary btn-danger" href="#">SOLD OUT</a></p> 
+			    </div>
+			    <br>
+			    <div class='hijo2'> 
+			      <p style= 'color: #fff!important;'>SATURDAY, SEP. ANJUNADEEP OPEN AIR AUSTIN. Austin, Texas. 
+			      <a class="btn btn-sm btn-primary btn-dark" href="#">Get tickets</a></p> 
+			    </div>
+			    <br>
+			    <div class='hijo2'>
+			       <p style= 'color: #fff!important;'>FRIDAY, SEP. ODD ONE OUT TOUR. Vancouver, Canada. 
+			       <a class="btn btn-sm btn-primary btn-dark" href="#">Get tickets</a> </p>
+			    </div>
+			    <br>
+			    <div class='hijo2'> 
+			        <p style= 'color: #fff!important;'>FRIDAY, SEP. ODD ONE OUT TOUR. Chicaco, IL. 
+			        <a class="btn btn-sm btn-primary btn-dark" href="#">Get tickets</a> </p> 
+			    </div>
+			    <br>
+			    <div class='hijo2'> 
+			        <p style= 'color: #fff!important;'>FRIDAY, SEP. ODD ONE OUT TOUR. Boston, MA. 
+			        <a class="btn btn-sm btn-primary btn-dark" href="#">Get tickets</a> </p> 
+			    </div>
+
+			</div><!--derecha-->
+		</div>
+	</div>
 
 
-   <div class= 'form'>
-    <fieldset>
-    <form>
-      <br>
-      <div class='block'>
-        <label for='prize'> Artist Fee/Offer: </label>
-        <input type= 'number' name= 'prize'>
-      </div>
-      <br>
-      <div class="block">
-        <label for='place'> Club/Venue: </label>
-       <input type= 'text' name= 'place' required>
-      </div>
-      <br> 
-      <div class="block">
-        <label for='city'> City: </label>
-        <input type= 'text' name= 'city' required>
-      </div>
-      <br>  
-      <div class="block">
-        <label for='country'> Country: </label>
-        <input type= 'text' name= 'country' required>
-       </div> 
-      <br>
-      <div class="block">
-        <label for='date'> <b> DATE </b> dd/mm/yy: </label> 
-        <input type= 'number' name= 'date' required>
-      </div>
-      <br>     
-      <div class="block">
-        <label for='website'> Website: </label>
-       <input type= 'text' name= 'website' required>
-      <br> 
-      </div> 
-      <br>
-      <div class="block">
-        <label for='name_adress'> Name: </label>
-        <input type= 'text' name= 'name_adress' required>
-      </div>
-      <br>
-      <div class="block">
-       <label for='name_adress'> Adress: </label>
-        <input type= 'text' name= 'name_adress' required>
-      </div> 
-      <br> 
-      <div class="block">
-        <label for='email'> Your Email: </label>
-        <input type= 'text' name= 'email' required>
-      </div> 
-      <br>
-      <br>
-      <div> Terms and conditions </div>
-      <input type='checkbox' name="acept" required>
 
-    <br>
-    <br>
+    <!--BOOKING-->
+	<section class="mb-4">
 
-    <a class="button-music" type='Send' name="Send"> Send request </a>
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4"> Booking </h2>
+    <!--Section description-->
+    <h5 class="text-center w-responsive mx-auto mb-5">Press, Promotion, Remix Requests & Licenses please contact to info@anjunamusic.com</h5>
 
-    </fieldset>
-    </form>
-  </div>
+    
+	<section class="contact-wrap">
+	  <form action="" class="contact-form">
+	    <div class="col-sm-6">
+	      <div class="input-block">
+	        <label for="">First Name</label>
+	        <input type="text" class="form-control">
+	      </div>
+	    </div>
+	    <div class="col-sm-6">
+	      <div class="input-block">
+	        <label for="">Last Name</label>
+	        <input type="text" class="form-control">
+	      </div>
+	    </div>
+	    <div class="col-sm-12">
+	      <div class="input-block">
+	        <label for="">Email</label>
+	        <input type="text" class="form-control">
+	      </div>
+	    </div>
+	    <div class="col-sm-12">
+	      <div class="input-block">
+	        <label for="">Message Subject</label>
+	        <input type="text" class="form-control">
+	      </div>
+	    </div>
+	    <div class="col-sm-12">
+	      <div class="input-block textarea">
+	        <label for="">Drop your message here</label>
+	        <textarea rows="3" type="text" class="form-control"></textarea>
+	      </div>
+	    </div>
+	    <div class="col-sm-12">
+	    <br>
+	      <button type="button" class="btn btn-danger btn-lg" href="">Send</button>
+	    </div>
+	  </form>
+	</section>
 
-</body>
+
+  </body>
 </html>

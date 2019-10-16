@@ -1,37 +1,53 @@
 $color_1: $color_1;
-$color_2: $color_3;
-$color_3: $color_4;
-$color_4: $color_5;
+$color_2: $color_2;
+$color_3: $color_3;
+$color_4: $color_4;
+$color_5: $color_5;
 $font_family_1: $font_family_1;
 $font_family_2: $font_family_2;
 $font_family_3: $font_family_3;
-$font_family_4: $font_family_4;
 $background_color_1: $background_color_1;
 $background_color_2: $background_color_2;
 
-
+/* Navbar
+====================================
+*/
+/* Home
+====================================
+*/
+/* Last releases
+====================================
+*/
+/* correccion margin */
+/* Biography
+====================================
+*/
+/* texto*/
+/* Discography
+====================================
+*/
+/* Dates
+====================================
+*/
+/* Booking
+====================================
+*/
 $color_1 {
 	&: {
-		black; {
+		white; {
 			$color_2 {
 				&: {
-					#000; {
+					black; {
 						$color_3 {
 							&: {
 								#fff; {
 									$color_4 {
 										&: {
-											white; {
+											$secondary-color; {
 												$color_5 {
 													&: {
-														#ffffff; {
-															$font_family_1 {
-																&: {
-																	'Oswald' {
-																		box-sizing: border-box;
-																	}
-																}
-															}
+														darken($primary-color {
+															box-sizing: border-box;
 														}
 													}
 												}
@@ -47,6 +63,15 @@ $color_1 {
 		}
 	}
 }
+10%); {
+	$font_family_1 {
+		&: {
+			'Oswald' {
+				box-sizing: border-box;
+			}
+		}
+	}
+}
 sans-serif; {
 	$font_family_2 {
 		&: {
@@ -56,13 +81,6 @@ sans-serif; {
 		}
 	}
 	$font_family_3 {
-		&: {
-			'Work Sans' {
-				box-sizing: border-box;
-			}
-		}
-	}
-	$font_family_4 {
 		&: {
 			'Ubuntu' {
 				box-sizing: border-box;
@@ -78,8 +96,12 @@ sans {
 					$background_color_2 {
 						&: {
 							transparent; {
-								* {
-									box-sizing: border-box;
+								$background_color_3 {
+									&: {
+										rgba(white {
+											box-sizing: border-box;
+										}
+									}
 								}
 							}
 						}
@@ -87,6 +109,11 @@ sans {
 				}
 			}
 		}
+	}
+}
+.8); {
+	* {
+		box-sizing: border-box;
 	}
 }
 html {
@@ -134,9 +161,9 @@ h2 {
 	font-family: $font_family_1;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 80px;
+	font-size: 60px !important;
 	letter-spacing: 1px;
-	color: $color_1;
+	color: $color_2;
 	display: block;
 	margin-block-start: 0.40em;
 	margin-block-end: 0.20em;
@@ -147,76 +174,29 @@ h3 {
 	font-family: $font_family_2;
 	text-align: center;
 	font-size: 30px;
-	color: $color_1;
+	color: $color_2;
 }
 h4 {
 	font-family: $font_family_2;
 	text-align: center;
-	font-size: 14px;
-	color: $color_1;
+	font-size: 14px !important;
+	color: $color_2;
 	font-weight: 600;
 }
 h5 {
 	font-family: $font_family_2;
 	text-align: center;
-	font-size: 14px;
-	color: $color_1;
+	font-size: 14px! important;
+	color: $color_2;
 	font-weight: 300;
 }
-.nav-item {
-	float: right;
-	font-size: 16px;
+.hero-text {
 	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-family: $font_family_1;
-	text-transform: uppercase;
-	float: right;
-	overflow: hidden;
-}
-.navbar-light {
-	.navbar-nav { .nav-link { color: $color_2;
-}
-} {
-	} {
-		#logo {
-			position: absolute;
-			padding-bottom: 48px;
-			margin-top: 15px;
-		}
-	}
-	.release {
-		margin: 5px;
-	}
-	#paragraph-disco {
-		padding: 10px;
-		display: flex;
-		flex-wrap: wrap;
-		padding: 7px;
-		justify-content: center;
-	}
-}
-.container2 {
-	position: relative;
-	display: inline-block;
-	width: 100%;
-}
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-.text-inside {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	font-family: $font_family_1;
 	transform: translate(-50%, -50%);
-	text-align: center;
-	font-size: 70px;
-	letter-spacing: 1px;
-	color: $color_2;
+	color: $color_1;
 }
 .text-block {
 	display: flex;
@@ -226,9 +206,9 @@ h5 {
 	font-family: $font_family_1;
 	width: 100%;
 	position: relative;
-	color: $color_2;
+	color: $color_3;
 	height: 25px;
-	padding-top: 5px;
+	padding-top: 1px;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -242,31 +222,63 @@ h5 {
 }
 .subcontainer_release {
 	border: none;
-	color: $color_3;
+	color: $color_1;
 	opacity: 1;
 	transition: 0.3s;
 	&: hover { opacity: 0.8;
 }
-.button-music {
-	font-family: $font_family_3;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 18px;
+} {
+	.release {
+		margin: 5px;
+	}
+	#paragraph-disco {
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 7px;
+		justify-content: center;
+	}
+	label { position: absolute;
+	left: 25px;
+	top: 25px;
+	display: block;
+	margin: 0;
+	font-weight: 300;
+	z-index: 1;
 	color: $color_4;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 40px;
-	padding-right: 40px;
-	background-color: $background_color_1;
-	justify-content: center;
+	font-size: 18px;
+	line-height: 10px;
+	.square-button { background-color: $background_color_3;
+	color: $color_5;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	@include border-radius(2px); @include transition(all 0.3s ease); padding: 0 60px;
+	height: 60px;
+	border: none;
+	width: 100%;
+	&: hover, &:focus{ background-color: white;
+	} {
+		.form-control {
+			background-color: $background_color_2;
+			padding: 0;
+			border: none;
+			@include border-radius(0); @include box-shadow(none); height: auto;
+			position: relative;
+			z-index: 2;
+			font-size: 18px;
+			color: $color_4;
+			&: focus { label{ top: 0;
+		}
+	}
 }
 p {
 	font-family: $font_family_2;
 	font-size: 16px;
 	word-spacing: 1px;
 	letter-spacing: 0,5px;
-	color: $color_1;
+	color: $color_2;
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 1220px;
@@ -299,7 +311,7 @@ p {
 }
 ul {
 	li { font-family: $font_family_2;
-	color: $color_1;
+	color: $color_2;
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 1220px;
@@ -317,9 +329,15 @@ ul {
 	width: 600px;
 	margin: 40px;
 }
+.image {
+	background-image: url('dates.jpg');
+	background-position: center center;
+	width: 100%;
+	height: 900px;
+}
 .dates {
 	font-family: $font_family_2;
-	color: $color_1;
+	color: $color_2;
 }
 .container_dates {
 	display: flex;
@@ -338,37 +356,45 @@ ul {
 	border: none;
 	padding: 5px;
 	margin: 5px;
-	font-family: $font_family_4;
-	font-size: 36px;
-	color: $color_3;
+	font-family: $font_family_3;
+	font-size: 38px;
+	color: $color_1 !important;
 }
 .hijo2 {
 	width: 300px;
 	height: 50px;
 	background-color: $background_color_2;
-	color: $color_1;
+	color: $color_2;
 	border: none;
 	padding: 5px;
 	margin: 5px;
-	font-family: $font_family_4;
+	font-family: $font_family_3;
 	font-size: 16px;
-	color: $color_3;
+	color: $color_1 !important;
 }
-.form {
-	display: block;
-	text-align: center;
+.contact-wrap {
+	padding: 15px;
 }
-form {
-	font-family: $font_family_2;
-	color: $color_1;
-	display: inline-block;
-	text-align: center;
+.contact-form {
+	margin-top: 30px;
+	.input-block{ background-color: rgba(white, .8);
+	border: solid 1px $primary-color;
+	width: 100%;
+	height: 60px;
+	padding: 25px;
+	position: relative;
+	margin-bottom: 20px;
+	@include transition(all 0.3s ease-out); &.focus{ background-color: $form-bg;
+	border: solid 1px darken($primary-color, 10%);
 }
-fieldset {
-	border-width: 0px;
+&.textarea {
+	height: auto;
+	.form-control{ height: auto;
+	resize: none;
 }
-label {
-	display: inline-block;
-	width: 140px;
-	text-align: right;
+@media (min-width: 768px) {
+	.contact-wrap {
+		width: 60%;
+		margin: auto;
+	}
 }
