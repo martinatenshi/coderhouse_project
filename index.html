@@ -5,8 +5,8 @@
 	 <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-   <link rel= 'stylesheet' type='text/css'
-    href='estilo.css'>
+   <link rel= 'stylesheet' type='text/css' href='estilo.css'>
+   <link rel= 'stylesheet' type='text/css' href='estilo.scss'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
             <img src= 'logo.png' alt='logo' id='logo'>
           </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,24 +29,24 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href='index.html'>Home
                   <span class="sr-only">(current)</span>
                 </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#latestreleases">Last Releases</a>
+            <a class="nav-link" href='#lastreleases'>Last Releases</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#biography">Biography</a>
+            <a class="nav-link" href='#biography'>Biography</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#discography">Discography</a>
+            <a class="nav-link" href='#discography'>Discography</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#dates">Dates</a>
+            <a class="nav-link" href='#dates'>Dates</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#booking">Booking</a>
+            <a class="nav-link" href='#booking'>Booking</a>
           </li>                
         </ul>
       </div>
@@ -56,7 +56,7 @@
   <!-- HOME -->
   <img class= 'd-block w-100' src= 'yotto.jpg' alt='main' >
 	  <div class="hero-text">
-	      <h1>'ODD ONE OUT' TOUR 2019</h1>
+	      <h1 href='home'>'ODD ONE OUT' TOUR 2019</h1>
 	      <a class="btn btn-large btn-primary btn-danger" href="#">Get tickets</a>
 	      <a class="btn btn-large btn-secondary btn-dark" href="#">Next dates</a>
 	  </div>
@@ -74,7 +74,9 @@
 
   <!-- LATEST RELEASES -->
 
-  <a name='latestrelases' href="#" style='text-decoration: none; '> <h2>Latest Releases</h2> </a>
+  <a name='lastreleases' id='lastreleases' style='text-decoration: none; '> 
+
+    <h2 id='latestrelases'>Latest Releases</h2> </a>
     <h4> Here's an overview of the tracks, remixes, and other releases of Yotto </h4>
 
   <br>
@@ -132,8 +134,12 @@
 
   <!-- BIOGRAPHY -->
 
-  <img class= 'd-block w-100' src= 'yotto3.png' alt='bio'> 
-  </div> 
+
+  <div class='image_bio'> <!-- ACA ESTA LA IMAGEN GRANDE -->
+
+   <a name="biography"> <h2 style= 'color: #fff!important; padding-top: 320px;'>Biography</h2> </a>
+   <h5 style= 'color: #fff!important;'> </h5>
+  </div>
 
   <div id= 'paragraph-bio'> 
 
@@ -218,16 +224,17 @@
 
  <!-- DATES -->
 
-  <div class='image'>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class='image'> <!-- ACA ESTA LA IMAGEN GRANDE -->
 
 
-	 <a name="Dates"> <h2 style= 'color: #fff!important;'> Dates</h2> </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+	 <a name="Dates"> <h2 style= 'color: #fff!important;'>Dates</h2> </a>
 	 <h5 style= 'color: #fff!important;'> These are the dates of the month, click 'See more' to see becoming gigs </h5>
 
 	 <br>
@@ -286,7 +293,12 @@
 		</div>
 	</div>
 
-
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
     <!--BOOKING-->
 	<section class="mb-4">
